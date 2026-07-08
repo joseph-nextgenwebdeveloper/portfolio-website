@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Ngigi Kiarie — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+ 
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+ 
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+ 
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <span class="logo-bracket">[</span>Kiarie Joseph Dev Works<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span> Available for work
+    </div>
+  </nav>
+ 
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <span class="logo-bracket">[</span>Kiarie Joseph Dev Works<span class="logo-bracket">]</span>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" id="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links" id="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section id="profile">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span> Full-Stack Developer · Nairobi, KE
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="line">Joseph</span>
+        <span class="line accent-line">Ngigi</span>
+        <span class="line">Kiarie</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Building web apps, mobile experiences & database-driven solutions — one clean line of code at a time.
+      </p>
+      <div class="hero-links reveal">
+        <a href="#projects" class="btn-primary">View Work <span>↓</span></a>
+        <a href="./assets/Joseph_Ngigi_Kiarie_CV 1.pdf" target="_blank" class="btn-ghost">Download CV</a>
+        <a href="https://github.com/joseph001technology/" target="_blank" class="btn-icon" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/joseph-kiarie-183982374/" target="_blank" class="btn-icon" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="Business.html" class="btn-primary">View Business Page  <span>↓</span></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="profile-frame">
+        <img src="./assets/images/profile-pic.png" alt="Joseph Ngigi" />
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+      </div>
+      <div class="floating-tag tag-1"><span class="mono">&lt;python /&gt;</span></div>
+      <div class="floating-tag tag-2"><span class="mono">Django</span></div>
+      <div class="floating-tag tag-3"><span class="mono">Flutter</span></div>
+    </div>
+  </section>
+ 
+  <!-- MARQUEE TICKER -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>Python</span><span class="sep">✦</span>
+      <span>Django</span><span class="sep">✦</span>
+      <span>Flutter</span><span class="sep">✦</span>
+      <span>JavaScript</span><span class="sep">✦</span>
+      <span>HTML &amp; CSS</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Java</span><span class="sep">✦</span>
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>Web Design</span><span class="sep">✦</span>
+      <span>Git</span><span class="sep">✦</span>
+      <span>PHP</span><span class="sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Python</span><span class="sep">✦</span>
+      <span>Django</span><span class="sep">✦</span>
+      <span>Flutter</span><span class="sep">✦</span>
+      <span>JavaScript</span><span class="sep">✦</span>
+      <span>HTML &amp; CSS</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Java</span><span class="sep">✦</span>
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>Web Design</span><span class="sep">✦</span>
+      <span>Git</span><span class="sep">✦</span>
+      <span>PHP</span><span class="sep">✦</span>
+    </div>
+  </div>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-label">01 / About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img-frame">
+          <img src="./assets/images/about-pic.jpg" alt="Joseph working" class="about-pic"/>
+          <div class="img-decoration"></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="about-lead">
+          Motivated Information Technology student with a passion for building clean, functional software — from full-stack web apps to cross-platform mobile applications.
+        </p>
+        <p class="about-lead">
+          
+         As a BBIT student, I combine technical expertise with business knowledge in marketing, accounting, and human resource management, enabling me to develop solutions that are both innovative and strategically aligned with business goals.
+
+        </p>
+        <p class="about-body">
+          I'm currently pursuing a <strong>Bachelor of Business Information Technology (BBIT)</strong> at JKUAT. Over the past year I've built and deployed real-world projects using Python & Django, Flutter, HTML/CSS/JS, and PostgreSQL. I believe in learning by doing — every project is a chance to push my skills further.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Year experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Languages spoken</span>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="https://kiariejosephdevworks.netlify.app//" target="_blank" class="inline-link"> Business Portfolio site ↗</a>
+          <a href="https://github.com/joseph001technology/" target="_blank" class="inline-link">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- EXPERIENCE / SKILLS -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-label">02 / Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+ 
+    <!-- second marquee - reverse -->
+    <div class="marquee-wrapper marquee-reverse reveal">
+      <div class="marquee-track">
+        <span>Problem Solving</span><span class="sep">◆</span>
+        <span>Team Collaboration</span><span class="sep">◆</span>
+        <span>Analytical Thinking</span><span class="sep">◆</span>
+        <span>Time Management</span><span class="sep">◆</span>
+        <span>Communication</span><span class="sep">◆</span>
+        <span>Quick Learner</span><span class="sep">◆</span>
+        <span>Problem Solving</span><span class="sep">◆</span>
+        <span>Team Collaboration</span><span class="sep">◆</span>
+        <span>Analytical Thinking</span><span class="sep">◆</span>
+        <span>Time Management</span><span class="sep">◆</span>
+        <span>Communication</span><span class="sep">◆</span>
+        <span>Quick Learner</span><span class="sep">◆</span>
+      </div>
+    </div>
+ 
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-category="Frontend">
+        <div class="skill-card-header">
+          <span class="skill-icon">⬡</span>
+          <h3>Frontend</h3>
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-name">HTML</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">CSS</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">JavaScript</span><span class="skill-bar"><span style="width:92%"></span></span></li>
+          <li><span class="skill-name">TypeScript</span><span class="skill-bar"><span style="width:65%"></span></span></li>
+          <li><span class="skill-name">Flutter</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+          <li><span class="skill-name">React</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+        </ul>
+      </div>
+      <div class="skill-card reveal" data-category="Backend">
+        <div class="skill-card-header">
+          <span class="skill-icon">⬡</span>
+          <h3>Backend</h3>
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-name">Python</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">Django</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">Node.js</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+          <li><span class="skill-name">PHP</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+          <li><span class="skill-name">Java</span><span class="skill-bar"><span style="width:85%"></span></span></li>
+        </ul>
+      </div>
+      <div class="skill-card reveal" data-category="Data & Tools">
+        <div class="skill-card-header">
+          <span class="skill-icon">⬡</span>
+          <h3>Data &amp; Tools</h3>
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-name">PostgreSQL</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+          <li><span class="skill-name">MySQL</span><span class="skill-bar"><span style="width:88%"></span></span></li>
+          <li><span class="skill-name">Git / GitHub</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">Business Mgmt</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+          <li><span class="skill-name">HR Systems</span><span class="skill-bar"><span style="width:100%"></span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-label">03 / Projects</span>
+      <h2 class="section-title">Things I've Built</h2>
+    </div>
+    <div class="projects-grid">
+ 
+      <!-- FreshFarm App -->
+      <div class="project-card reveal" data-project="freshfarm">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="assets/images/Agriflow-home.jpeg" alt="FreshFarm App" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-placeholder">
+              <span>🌿</span>
+            </div>
+            <span class="project-status status-live"><span class="status-pulse"></span>Live</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag featured-tag">Featured</span>
+            </div>
+            <h3 class="project-title">FreshFarm App</h3>
+            <p class="project-desc">A cross-platform mobile application connecting local farmers with buyers. Built with Flutter for the frontend and Python/Django as the backend API — featuring real-time product listings, order management, and user authentication.</p>
+            <div class="project-actions">
+              <button class="project-btn details-btn" data-project="freshfarm">View Details</button>
+              <a href="https://github.com/joseph001technology/Farmers-App-Mobile" target="_blank" class="project-btn ghost">Mobile Repo ↗</a>
+              <a href="https://github.com/joseph001technology/Farmers-App-Backend" target="_blank" class="project-btn ghost">Backend Repo ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Blog App -->
+      <div class="project-card reveal" data-project="blog">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/images/blog-home.png" alt="Blog Web App" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-placeholder"><span>✍️</span></div>
+            <span class="project-status status-live"><span class="status-pulse"></span>Live</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">HTML/CSS</span>
+            </div>
+            <h3 class="project-title">Blog Web Application</h3>
+            <p class="project-desc">Full-featured blogging platform with article posting, commenting, and category management. Designed user-friendly interfaces with HTML, CSS, and JavaScript, deployed on PythonAnywhere.</p>
+            <div class="project-actions">
+              <button class="project-btn details-btn" data-project="blog">View Details</button>
+              <a href="https://github.com/joseph-nextgenwebdeveloper/personal-blog" target="_blank" class="project-btn ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Church Website -->
+      <div class="project-card reveal" data-project="church">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/images/church-home.png" alt="Church Website" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="project-placeholder"><span>⛪</span></div>
+            <span class="project-status status-notdeployed"><span class="status-pulse"></span>Not Deployed</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Church Website</h3>
+            <p class="project-desc">Responsive church website featuring events listings, ministries, media content, and a contact system to improve communication with church members. Built with clean, semantic HTML and CSS.</p>
+            <div class="project-actions">
+              <button class="project-btn details-btn" data-project="church">View Details</button>
+              <a href="https://github.com/joseph001technology/" target="_blank" class="project-btn ghost">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Sabina Designs -->
+      <div class="project-card reveal" data-project="sabina">
+        <div class="project-card-inner">
+          <div class="project-img-wrap">
+            <img src="./assets/images/elegance-home.png" alt="Sabina Designs" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="project-placeholder"><span>🧵</span></div>
+            <span class="project-status status-live"><span class="status-pulse"></span>Live</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Sabina Designs</h3>
+            <p class="project-desc">A marketing and portfolio website built for my mother's tailoring business in Thika — showcasing her custom designs, services, and client testimonials, with a direct booking flow for custom outfit orders.</p>
+            <div class="project-actions">
+              <button class="project-btn details-btn" data-project="sabina">View Details</button>
+              <a href="https://sabinakiarie.netlify.app/" target="_blank" class="project-btn ghost">Live Site ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-label">04 / Contact</span>
+      <h2 class="section-title">Let's Work Together</h2>
+    </div>
+    <div class="contact-wrapper reveal">
+      <p class="contact-intro">Whether it's a project, internship, or just a chat about code — my inbox is always open.</p>
+      <div class="contact-cards">
+        <a href="mailto:josenkiarie054@gmail.com" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">josenkiarie054@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+254742906228" class="contact-card">
+          <span class="contact-icon">☎</span>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">0742 906 228</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/joseph-kiarie-183982374/" target="_blank" class="contact-card">
+          <span class="contact-icon">in</span>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">joseph-kiarie</span>
+          </div>
+        </a>
+        <a href="https://github.com/joseph001technology/" target="_blank" class="contact-card">
+          <span class="contact-icon">&lt;/&gt;</span>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">joseph001technology</span>
+          </div>
+        </a>
+      </div>
+      <a href="mailto:josephnkiarie054@gmail.com" class="big-cta">Send me a message ↗</a>
+      <a href="Business.html" class="btn-primary">View Business Page  <span>↓</span></a>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">[</span>Kiarie Joseph Dev Works<span class="logo-bracket">]</span></div>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Joseph Ngigi Kiarie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL (populated by project-modal.js) -->
+  <div id="project-modal-overlay" class="project-modal-overlay" aria-hidden="true">
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+      <button class="project-modal-close" id="pm-close" aria-label="Close">✕</button>
+
+      <div class="pm-gallery">
+        <div class="pm-main-img-wrap">
+          <img id="pm-main-img" src="" alt="" onerror="this.style.opacity='0.15';" />
+          <span class="pm-zoom-hint">Click to enlarge ⤢</span>
+        </div>
+        <div class="pm-thumbs" id="pm-thumbs"></div>
+      </div>
+
+      <div class="pm-body">
+        <div class="pm-meta-row">
+          <div class="pm-tags" id="pm-tags"></div>
+          <span class="project-status" id="pm-status"><span class="status-pulse"></span><span id="pm-status-label"></span></span>
+        </div>
+        <h3 class="pm-title" id="pm-title"></h3>
+        <p class="pm-status-note" id="pm-status-note"></p>
+
+        <div class="pm-section">
+          <h4>Overview</h4>
+          <p id="pm-overview"></p>
+        </div>
+
+        <div class="pm-section">
+          <h4>Key Features</h4>
+          <ul id="pm-features"></ul>
+        </div>
+
+        <div class="pm-section">
+          <h4>Tech Stack</h4>
+          <div class="pm-stack" id="pm-stack"></div>
+        </div>
+
+        <div class="pm-actions" id="pm-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FULLSCREEN IMAGE LIGHTBOX -->
+  <div id="pm-lightbox" class="pm-lightbox" aria-hidden="true">
+    <button class="pm-lightbox-close" id="pm-lightbox-close" aria-label="Close">✕</button>
+    <img id="pm-lightbox-img" src="" alt="" />
+  </div>
+ 
+  <script src="script.js"></script>
+  <script src="project-modal.js"></script>
+</body>
+</html>
