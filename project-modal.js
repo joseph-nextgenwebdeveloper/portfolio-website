@@ -101,7 +101,7 @@ const PROJECTS = {
     techStack: ["HTML", "CSS", "JavaScript", "Netlify"],
     links: [
       { label: "Live Site ↗", url: "https://sabinakiarie.netlify.app/", type: "primary" },
-      { label: "View Portfolio ↗", url: "https://sabinakiarie.netlify.app/#portfolio", type: "ghost" }
+      { label: "GitHub ↗", url: "https://github.com/joseph001technology/elegance-archive", type: "ghost" }
     ]
   }
 
